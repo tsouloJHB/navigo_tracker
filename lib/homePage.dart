@@ -40,6 +40,7 @@ class _HomePageState extends State<HomePage> {
     _createMarkerIcon(); // Load the custom marker icon
   }
 
+  // start location
   void startLocation() {
     _location.changeSettings(accuracy: LocationAccuracy.high, interval: 1000);
     _location.requestPermission().then((PermissionStatus status) {
